@@ -1,0 +1,408 @@
+/*
+ * HTMLPOOL
+ * Dive into HTML with better CSS.
+ * 
+ * (C) Tomas Reimers, 2012
+ * 
+ * Licensed under an MIT License
+ * 
+ * HTMLPool is a set of better CSS defaults to build webpages with.
+ */
+
+/*
+ * Basics
+ */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'helvetica', 'arial', sans-serif;
+    font-size: 1em;
+    text-align: left;
+}
+
+::selection {
+    background:#FF0066;
+    color:#FFFFFF;
+}
+
+*::-moz-selection {
+    background:#FF0066;
+    color:#FFFFFF;
+}
+
+/*
+ * Inline Elements
+ */
+
+a, a:link {
+    color: #0066FF;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #ABCDFF;
+}
+
+a:hover {
+    color: #5297FF;
+}
+
+a:active {
+    color: #0056D6;
+}
+
+abbr {
+    border-bottom: 1px #000000 dotted;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+code, samp, pre {
+    padding: 0.2em;
+    background-color: #333333;
+    color: #FFFFFF;
+    -webkit-border-radius: 0.1em;
+    -moz-border-radius: 0.1em;
+    border-radius: 0.1em;
+    text-shadow: 0px 1px 0px #000000;
+    filter: dropshadow(color=#000000, offx=0, offy=1);
+    font-family: monospace;
+}
+
+del, s {
+    text-decoration: line-through;
+    color: #999999;
+}
+
+em, i {
+    font-style: italic;
+}
+
+ins {
+    color: #006600;
+}
+
+kbd, output {
+    display: inline;
+    font-family: monospace;
+    padding: 0.2em;
+    background-color: #CCCCCC;
+    color:#333333;
+    -webkit-border-radius: 0.1em;
+    -moz-border-radius: 0.1em;
+    border-radius: 0.1em;
+    text-shadow: 0px 1px 0px #FFFFFF;
+    filter: dropshadow(color=#FFFFFF, offx=0, offy=1);
+}
+
+mark {
+    display: inline;
+    background: #FF0066;
+    color: #FFFFFF;
+}
+
+q {
+    font-size: italic;
+}
+
+q:before {
+    content: '"';
+}
+
+q:after {
+    content: '"';
+}
+
+sub, small {
+    vertical-align: baseline;
+    font-size: 0.6em;
+}
+
+sup {
+    vertical-align: top;
+    font-size: 0.6em;
+}
+
+u {
+    text-decoration: underline;
+}
+
+var {
+    display: inline;
+}
+
+time {
+    display: inline;
+}
+
+/*
+ * Input
+ */
+
+input[type='button'], input[type='submit'], input[type='reset'], button {
+    font-family: 'helvetica', 'arial', sans-serif;
+    font-size: 1em;
+    padding: 0.2em;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    border-radius: 0.2em;
+    background-color: #E0E0E0;
+    background-image: linear-gradient(bottom, rgb(212,212,212) 0%, rgb(224,224,224) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(212,212,212) 0%, rgb(224,224,224) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(212,212,212) 0%, rgb(224,224,224) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(212,212,212) 0%, rgb(224,224,224) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(212,212,212) 0%, rgb(224,224,224) 100%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(212,212,212)),
+        color-stop(1, rgb(224,224,224))
+    );
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4);
+    color: #000000;
+    text-shadow: 0px 1px 0px #FFFFFF;
+    filter: dropshadow(color=#FFFFFF, offx=0, offy=1);
+    border: 1px solid #D4D4D4;
+    cursor:pointer;
+    cursor:hand;
+}
+
+input[type='button']:hover, input[type='submit']:hover, input[type='reset']:hover, button:hover {
+    background-color: #ECECEC;
+    background-image: linear-gradient(bottom, rgb(224,224,224) 0%, rgb(236,236,236) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(224,224,224) 0%, rgb(236,236,236) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(224,224,224) 0%, rgb(236,236,236) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(224,224,224) 0%, rgb(236,236,236) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(224,224,224) 0%, rgb(236,236,236) 100%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(224,224,224)),
+        color-stop(1, rgb(236,236,236))
+    );
+    border-color: #C8C8C8;
+}
+
+input[type='button']:active, input[type='submit']:active, input[type='reset']:active, button:active {
+    background-color: #D4D4D4;
+    background-image: linear-gradient(bottom, rgb(200,200,200) 0%, rgb(212,212,212) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(200,200,200) 0%, rgb(212,212,212) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(200,200,200) 0%, rgb(212,212,212) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(200,200,200) 0%, rgb(212,212,212) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(200,200,200) 0%, rgb(212,212,212) 100%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(200,200,200)),
+        color-stop(1, rgb(212,212,212))
+    );
+    border-color: #C8C8C8;
+}
+
+input[type='checkbox'] {
+    height: 1em;
+    width: 1em;
+    border: 1px solid #000000;
+}
+input[type='radio'] {
+    height: 1em;
+    width: 1em;
+    border: 1px solid #000000;
+}
+
+textarea, input[type='text'], input[type='password'] {
+    font-family: 'helvetica', 'arial', sans-serif;
+    font-size: 1em;
+    padding: 0.2em;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-top-color: #D4D4D4;
+}
+
+textarea:hover, input[type='text']:hover, input[type='password']:hover {
+    border: 1px solid #D4D4D4;
+    border-top-color: #C8C8C8;
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(224, 224, 224, 1);
+    box-shadow: inset 0px 0px 2px 0px rgba(224, 224, 224, 1); 
+}
+
+textarea:focus, input[type='text']:focus, input[type='password']:focus {
+    border: 1px solid #0066FF;
+    border-top-color: #0056D6;
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(212, 212, 212, 1);
+    box-shadow: inset 0px 0px 2px 0px rgba(212, 212, 212, 1); 
+}
+
+input[type='button'][disabled], input[type='submit'][disabled], input[type='reset'][disabled], button[disabled] {
+    background-color: #ECECEC;
+    background-image: linear-gradient(bottom, rgb(224,224,224) 0%, rgb(236,236,236) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(224,224,224) 0%, rgb(236,236,236) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(224,224,224) 0%, rgb(236,236,236) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(224,224,224) 0%, rgb(236,236,236) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(224,224,224) 0%, rgb(236,236,236) 100%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(224,224,224)),
+        color-stop(1, rgb(236,236,236))
+    );
+    border-color: #C8C8C8;
+    color: #CCCCCC;
+    cursor: default;
+}
+
+textarea[disabled], input[type='text'][disabled], input[type='password'][disabled] {
+    border: 1px solid #ECECEC;
+    border-top-color: #E0E0E0;
+    color: #CCCCCC;
+}
+textarea[disabled]:hover, input[type='text'][disabled]:hover, input[type='password'][disabled]:hover {
+    box-shadow: none;
+}
+
+/*
+ * Block Elements
+ */
+
+blockquote {
+    padding-left: 4em;
+    position: relative;
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+blockquote:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #CCCCCC;
+    font-size: 4em;
+    content: '\2018\2018';
+    font-style: italic;
+}
+
+p, pre {
+    margin: 1em;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: left;
+}
+
+pre {
+    padding: 1em;
+}
+
+/*
+ * Headers
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+    color: #333333;
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {    
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 0.8em;
+}
+
+h5 {
+    font-size: 0.6em;
+}
+
+h6 {
+    font-size: 0.4em;
+}
+
+/*
+ * Tables
+ */
+
+table {
+    border-collapse: collapse;
+    border: none;
+}
+
+tr, thead {
+    border-bottom: 1px dotted #000000;
+}
+
+tr:nth-of-type(2n) {
+    background-color: #ECECEC;
+}
+
+td, th {
+    padding:10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+thead tr{
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
+}
+
+/*
+ * New HTML5 Structual Elements
+ */
+
+article, aside, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/*
+ * Misc.
+ */
+
+hr {
+    height: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+/*
+ * Predefined classes
+ */
+
+ .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.wrapper {
+    max-width:960px;
+    margin:auto;
+}
