@@ -305,7 +305,7 @@ p, pre {
 
 pre {
     padding: 1em;
-    overflow: scroll;
+    overflow: auto;
 }
 
 /*
