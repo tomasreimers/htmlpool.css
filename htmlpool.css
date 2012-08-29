@@ -19,6 +19,8 @@ html, body {
     font-family: 'helvetica', 'arial', sans-serif;
     font-size: 1em;
     text-align: left;
+    color: #000000;
+    background: #FFFFFF;
 }
 
 ::selection {
@@ -29,6 +31,12 @@ html, body {
 *::-moz-selection {
     background:#FF0066;
     color:#FFFFFF;
+}
+
+* {
+    vertical-align: baseline;
+    font: inherit;
+    font-size: 100%;
 }
 
 /*
@@ -141,6 +149,10 @@ time {
 /*
  * Input
  */
+
+input, select {
+    vertical-align: middle;
+}
 
 input[type='button'], input[type='submit'], input[type='reset'], button {
     font-family: 'helvetica', 'arial', sans-serif;
@@ -349,6 +361,7 @@ h6 {
 table {
     border-collapse: collapse;
     border: none;
+    border-spacing: 0;
 }
 
 tr, thead {
@@ -374,7 +387,7 @@ thead tr{
  * New HTML5 Structual Elements
  */
 
-article, aside, footer, header, hgroup, menu, nav, section {
+article, aside, footer, header, hgroup, menu, nav, section, figcaption, figure {
     display: block;
 }
 
@@ -383,7 +396,10 @@ article, aside, footer, header, hgroup, menu, nav, section {
  */
 
 hr {
-    height: 0;
+    height: 1px;
+    display: block;
+    padding: 0;
+    margin: 1em 0;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #CCCCCC;
