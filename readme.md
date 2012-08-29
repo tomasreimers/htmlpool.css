@@ -3,7 +3,7 @@
 
 HTMLPool is a set of default styles which you can easily build ontop of, without having to restyle every element.
 
-To learn more, see the demo page.
+[Learn More](http://htmlpool.com/)
 
 ## Usage
 
