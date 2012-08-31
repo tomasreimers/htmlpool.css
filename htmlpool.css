@@ -23,16 +23,6 @@ html, body {
     background: #FFFFFF;
 }
 
-::selection {
-    background:#FF0066;
-    color:#FFFFFF;
-}
-
-*::-moz-selection {
-    background:#FF0066;
-    color:#FFFFFF;
-}
-
 * {
     vertical-align: baseline;
     font: inherit;
