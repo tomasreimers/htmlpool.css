@@ -161,7 +161,7 @@ input, select {
 input[type='button'], input[type='submit'], input[type='reset'], button {
     font-family: 'helvetica', 'arial', sans-serif;
     font-size: 1em;
-    padding: 0.2em;
+    padding: 0.2em 0.6em;
     -webkit-border-radius: 0.2em;
     -moz-border-radius: 0.2em;
     border-radius: 0.2em;
@@ -325,27 +325,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.8em;
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: 2.4em;
 }
 
 h3 {    
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 h4 {
-    font-size: 0.8em;
+    font-size: 1.6em;
 }
 
 h5 {
-    font-size: 0.6em;
+    font-size: 1.2em;
 }
 
 h6 {
-    font-size: 0.4em;
+    font-size: 1em;
 }
 
 /*
@@ -359,7 +359,7 @@ table {
 }
 
 tr, thead {
-    border-bottom: 1px dotted #000000;
+    border-bottom: 1px solid #CCCCCC;
 }
 
 tr:nth-of-type(2n) {
